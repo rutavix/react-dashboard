@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Dashboard (Static Demo)</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>Service Dashboard</h1>
+        <p>Operational overview for API services</p>
+      </header>
+
+      <section class="kpi-grid" id="kpi-grid"></section>
+
+      <section class="panel">
+        <h2>Latency Trend</h2>
+        <svg id="latency-chart" viewBox="0 0 600 180" role="img" aria-label="Latency chart"></svg>
+      </section>
+
+      <section class="panel">
+        <h2>Service Status</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th>Latency</th>
+              <th>Error Rate</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="service-body"></tbody>
+        </table>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
